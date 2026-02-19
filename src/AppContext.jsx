@@ -1,8 +1,8 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, } from 'react';
 
 const AppContext = createContext();
 
-export const useApp = () => useContext(AppContext);
+// export const useApp = () => useContext(AppContext);
 
 export const AppProvider = ({ children }) => {
     const [screens, setScreens] = useState([
