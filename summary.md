@@ -256,3 +256,53 @@ Return JSON:
   "expected_impact": ["...", "..."]
 }
 
+file structure :
+
+frontend/
+├─ package.json
+├─ vite.config.js
+├─ index.html
+├─ src/
+│  ├─ main.jsx                 # App entry
+│  ├─ App.jsx
+│  ├─ index.css                # Tailwind + global styles
+│  ├─ assets/                  # Images, icons, placeholder data
+│  ├─ components/
+│  │  ├─ UploadScreenshots/
+│  │  │  ├─ UploadScreenshots.jsx
+│  │  │  └─ UploadScreenshots.css
+│  │  ├─ ScreenComparison/
+│  │  │  ├─ ScreenComparison.jsx
+│  │  │  └─ ScreenComparison.css
+│  │  ├─ ThoughtProcessEditor/
+│  │  │  ├─ ThoughtProcessEditor.jsx
+│  │  │  └─ ThoughtProcessEditor.css
+│  │  ├─ KpiCard/
+│  │  │  ├─ KpiCard.jsx
+│  │  │  └─ KpiCard.css
+│  │  ├─ KpiModal/
+│  │  │  ├─ KpiModal.jsx
+│  │  │  └─ KpiModal.css
+│  │  ├─ charts/
+│  │  │  ├─ TrendChart.jsx
+│  │  │  └─ PieChart.jsx
+│  │  └─ UI/
+│  │     ├─ Modal.jsx           # Generic modal wrapper
+│  │     └─ Button.jsx          # Generic button
+│  ├─ pages/
+│  │  ├─ Dashboard.jsx
+│  │  └─ ScreenDetail.jsx
+│  ├─ context/
+│  │  └─ AppContext.jsx         # Global state (screens, KPIs)
+│  ├─ hooks/
+│  │  └─ useKpiData.js
+│  ├─ services/
+│  │  ├─ api.js                 # Axios / fetch wrapper
+│  │  └─ kpiService.js
+│  └─ utils/
+│     ├─ format.js              # Format numbers, percentages
+│     └─ aiPrompt.js            # AI prompt generation
+└─ tests/
+   ├─ UploadScreenshots.test.jsx
+   ├─ KpiCard.test.jsx
+   └─ ThoughtProcessEditor.test.jsx
