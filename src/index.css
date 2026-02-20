@@ -1,5 +1,5 @@
-@tailwind base;
-@tailwind components;
+ /* @tailwind base; */
+/* @tailwind components;  */
 @tailwind utilities;
 
 :root {
@@ -30,3 +30,4 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
