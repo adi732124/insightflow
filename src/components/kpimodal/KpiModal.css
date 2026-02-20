@@ -1,0 +1,28 @@
+.kpi-modal-content {
+    @apply p-2;
+}
+
+.kpi-modal-tabs {
+    @apply flex space-x-6 border-b border-gray-200 mb-6;
+}
+
+.kpi-modal-tab {
+    @apply pb-3 text-sm font-medium text-gray-500 transition-colors relative;
+}
+
+.kpi-modal-tab:hover {
+    @apply text-indigo-600;
+}
+
+.kpi-modal-tab.active {
+    @apply text-indigo-600;
+}
+
+.kpi-modal-tab.active::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-indigo-600 rounded-t-full;
+}
+
+.chart-container {
+    @apply bg-gray-50 rounded-xl p-4 h-[350px];
+}

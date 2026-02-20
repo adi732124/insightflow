@@ -1,0 +1,8 @@
+.kpi-card {
+    @apply p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-white/40;
+    background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.6));
+}
+
+.kpi-card:hover {
+    @apply border-indigo-200;
+}

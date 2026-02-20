@@ -44,17 +44,17 @@ const UploadScreenshots = ({ onUploadComplete }) => {
         <div className="text-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div className="upload-area">
-                    <h3 className="font-semibold mb-2">Current UI</h3>
+                    <h3 className="font-semibold mb-4 text-gray-700 text-lg">Current UI</h3>
                     {previews.current ? (
-                        <img src={previews.current} alt="Current UI" className="max-h-48 mx-auto mb-2" />
+                        <img src={previews.current} alt="Current UI" className="max-h-48 mx-auto mb-2 rounded-lg shadow-sm" />
                     ) : (
                         <input type="file" onChange={(e) => handleFileChange(e, 'current')} className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" />
                     )}
                 </div>
                 <div className="upload-area">
-                    <h3 className="font-semibold mb-2">Revamped UI</h3>
+                    <h3 className="font-semibold mb-4 text-gray-700 text-lg">Revamped UI</h3>
                     {previews.revamped ? (
-                        <img src={previews.revamped} alt="Revamped UI" className="max-h-48 mx-auto mb-2" />
+                        <img src={previews.revamped} alt="Revamped UI" className="max-h-48 mx-auto mb-2 rounded-lg shadow-sm" />
                     ) : (
                         <input type="file" onChange={(e) => handleFileChange(e, 'revamped')} className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" />
                     )}
