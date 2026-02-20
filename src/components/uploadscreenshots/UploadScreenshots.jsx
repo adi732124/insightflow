@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { uploadScreenshots } from '../../services/api';
 import Button from '../UI/Button';
-import './UploadScreenshots.css';
+import "./UploadScreenshots.css";
 
 const UploadScreenshots = ({ onUploadComplete }) => {
     const [uploading, setUploading] = useState(false);

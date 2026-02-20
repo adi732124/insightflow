@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import ScreenComparison from '../components/ScreenComparison/ScreenComparison';
-import ThoughtProcessEditor from '../components/ThoughtProcessEditor/ThoughtProcessEditor';
-import KpiCard from '../components/KpiCard/KpiCard';
-import KpiModal from '../components/KpiModal/KpiModal';
+import ThoughtProcessEditor from '../components/thoughtprocesseditor/ThoughtProcessEditor';
+import KpiCard from '../components/kpicard/KpiCard';
 import { useAppContext } from '../context/AppContext';
 import { useKpiData } from '../hooks/useKpiData';
+import KpiModal from '../components/KpiModal/KpiModal';
 
 const ScreenDetail = () => {
     const { currentScreen } = useAppContext();
