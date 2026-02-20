@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useMemo } from 'react';
 
 const AppContext = createContext();
 
@@ -11,8 +11,16 @@ export const AppProvider = ({ children }) => {
         setCurrentScreen(screenData);
     };
 
+    // Memoize the context value to prevent unnecessary re-renders of consumers
+    const value = useMemo(() => ({
+        screens,
+        addScreen,
+        currentScreen,
+        setCurrentScreen
+    }), [screens, currentScreen]);
+
     return (
-        <AppContext.Provider value={{ screens, addScreen, currentScreen, setCurrentScreen }}>
+        <AppContext.Provider value={value}>
             {children}
         </AppContext.Provider>
     );
